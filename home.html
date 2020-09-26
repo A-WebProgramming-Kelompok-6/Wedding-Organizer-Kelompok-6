@@ -39,7 +39,7 @@
   </style>
 
 </head>
-</body>
+<body>
 <nav class="navbar navbar-expand-lg navbar-light bg-info">
   <a class="navbar-brand" href="#">Project WO</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -121,32 +121,64 @@
   </a>
 
 </div>
-
-
+<br> </br>
 <div class="container">
   <div class="col row-cols-1 border rounded">
-    <div class="col">
-      <form>
+    <form class="needs-validation" novalidate>
+      <div class="col">
         <div class="form-group">
           <label for="Name1">Masukkan Nama Anda</label>
-          <input type="text" class="form-control" id="Nama1" aria-describedby="emailHelp" placeholder="Nama Anda">
+          <input type="text" class="form-control" id="Nama1" aria-describedby="emailHelp" placeholder="Nama Anda" >
+          <div class="valid-feedback">
+          </div>
         </div>
     </div>
     <div class="col">
       <div class="form-group">
         <label for="Name2">Masukkan Pasangan Nama Anda</label>
         <input type="text" class="form-control" id="Nama1" aria-describedby="emailHelp"
-          placeholder="Nama Pasangan Anda">
+          placeholder="Nama Pasangan Anda"  required>
+          <div class="valid-feedback">
+          </div>
       </div>
     </div>
     <div class="col">
       <div class="form-group">
         <label for="Tanggal">Masukkan Tanggal Pernikahan Anda</label>
-        <input class="form-control" type="date" value="2020-12-12" id="example-date-input">
+        <input class="form-control" type="date" value="2020-12-12" id="example-date-input" required>
+        <div class="invalid-feedback">
+          Masukkan tanggal yang benar.
+        </div>
+        </div>
+      </div>
+        
+         <button type="submit" class="btn btn-success">Submit</button>
+        </form>
       </div>
     </div>
-    <div class="col">
-      <button type="button" class="btn btn-success">Submit</button>
-    </div>
-  </div>
-</div>
+
+
+</body>
+
+
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+  </script>

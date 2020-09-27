@@ -51,11 +51,11 @@
       <li class="nav-item">
         <a class="nav-link" href="home.html">Home</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="galeri.html">Galeri <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="galeri.html">Galeri</a>
       </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="testimoni.html">Testimoni </a>
+      <li class="nav-item active">
+        <a class="nav-link" href="testimoni.html">Testimoni <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
@@ -87,45 +87,65 @@
   </div>
 </nav>
 
-<div class="row row-cols-2 row-cols-md-3">
-  <div class="col mb-4">
-    <div class="card h-100">
-      <img src="https://www.brides.com/thmb/RpvGvSGYyJypKAP8cf33u05ae6I=/500x350/filters:no_upscale():max_bytes(200000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__brides__proteus__59c2c243de2b8d21f8906c60__11-ce9211947e384cc6bca8670c5527be96.jpeg "
-        class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">10 Januari 2020</h5>
-        <p class="card-text">Pernikahan ini digelar dengan Tema Outdoor</p>
+<h2 class="text-center">SIGN UP</h2>
+
+<div class="container">
+    <div class="col row-cols-1 border rounded">
+      <form class="needs-validation" novalidate>
+        <div class="col">
+          <div class="form-group">
+            <label for="Name1">Masukkan Nama Anda</label>
+            <input type="text" class="form-control" id="Nama1" aria-describedby="emailHelp" placeholder="Nama Anda" >
+            <div class="valid-feedback">
+            </div>
+          </div>
       </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card h-100">
-      <img src="https://tradish.com/images/chinese-wedding-couple-ceremony0.jpg"
-        class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">15 Februari</h5>
-        <p class="card-text">Pernikahan dilaksanakan dengan adat china.</p>
+      <div class="col">
+        <div class="form-group">
+          <label for="Name2">Masukkan Pasangan Nama Anda</label>
+          <input type="text" class="form-control" id="Nama1" aria-describedby="emailHelp"
+            placeholder="Nama Pasangan Anda"  required>
+            <div class="valid-feedback">
+            </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card h-100">
-      <img src="https://cdn2.tstatic.net/aceh/foto/bank/images/pernikahan-secara-online-di-india.jpg"
-        class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">17 Maret 2020</h5>
-        <p class="card-text">Pernikahan secara online akibat diadakannya PSBB</p>
+      <div class="col">
+        <div class="form-group">
+          <label for="Tanggal">Masukkan Tanggal Pernikahan Anda</label>
+          <input class="form-control" type="date" value="2020-12-12" id="example-date-input" required>
+          <div class="invalid-feedback">
+            Masukkan tanggal yang benar.
+          </div>
+          </div>
+        </div>
+          
+           <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card h-100">
-      <img src="https://lib.store.yahoo.net/lib/yhst-11981746382951/japanese-wedding.jpg"
-        class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">12 Juni 2020</h5>
-        <p class="card-text">Pernikahan dengan gaya Jepang</p>
-      </div>
-    </div>
-  </div>
-</div>
+  
+  
+  </body>
+  
+  
+  
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>

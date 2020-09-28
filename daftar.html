@@ -87,26 +87,26 @@
   </div>
 </nav>
 
-<h2 class="text-center">SIGN UP</h2>
+<h2 class="text-center">SIGN IN</h2>
 
 <div class="container">
-    <div class="col row-cols-1 border rounded">
-      <form class="needs-validation" novalidate>
-        <div class="col">
-          <div class="form-group">
-            <label for="Name1">Masukkan Nama Anda</label>
-            <input type="text" class="form-control" id="Nama1" aria-describedby="emailHelp" placeholder="Nama Anda" >
-            <div class="valid-feedback">
-            </div>
+  <div class="col row-cols-1 border rounded">
+    <form class="needs-validation" novalidate>
+      <div class="col">
+        <div class="form-group">
+          <label for="Name1">Masukkan Nama Anda</label>
+          <input type="text" class="form-control" id="Nama1" aria-describedby="emailHelp" placeholder="Nama Anda">
+          <div class="valid-feedback">
           </div>
+        </div>
       </div>
       <div class="col">
         <div class="form-group">
           <label for="Name2">Masukkan Pasangan Nama Anda</label>
           <input type="text" class="form-control" id="Nama1" aria-describedby="emailHelp"
-            placeholder="Nama Pasangan Anda"  required>
-            <div class="valid-feedback">
-            </div>
+            placeholder="Nama Pasangan Anda" required>
+          <div class="valid-feedback">
+          </div>
         </div>
       </div>
       <div class="col">
@@ -116,36 +116,36 @@
           <div class="invalid-feedback">
             Masukkan tanggal yang benar.
           </div>
-          </div>
-        </div>
-          
-           <button type="submit" class="btn btn-success">Submit</button>
-          </form>
         </div>
       </div>
-  
-  
-  </body>
-  
-  
-  
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-    </script>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+</body>
+
+
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict';
+    window.addEventListener('load', function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>

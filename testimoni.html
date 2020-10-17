@@ -27,6 +27,11 @@
 
   <!-- Bootstrap core CSS -->
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="custom.css">
 
   <style>
     body {
@@ -39,7 +44,7 @@
       vertical-align: text-bottom;
     }
   </style>
-  <link href="carousel.css" rel="stylesheet">
+  <link href="testi.css" rel="stylesheet">
 </head>
 
 <body>
@@ -114,79 +119,59 @@
         </p>
       </div>
     </section>
-    <div class="album py-5 bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img src="https://london.bridestory.com/images/c_fill,dpr_1.0,f_auto,fl_progressive,pg_1,q_80,w_680/v1/assets/screenshot_2017-12-11-07-51-07-SJulYIibM/point-one-wedding-organizer_testimoni-wedding-fada-eris_1.png
-        " class="rounded mx-auto d-block" style="width:358px ;height:358px ">
-                <div class="card body">
-                  <p class="card-text">
-                    Customer yang 1 ini sangat puas terhadap kinerja dari jasa kami.
-                  </p>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-8 offset-md-2 col-10 offset-1 mt-5">
+              <h2 class="text-center mt-5 mb-5 pb-2 text-uppercase text-dark"><strong>Testimonials</strong></h2>
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner mt-4">
+                  <div class="carousel-item text-center active">
+                      <div class="img-box p-1 border rounded-circle m-auto">
+                          <img class="d-block w-100 rounded-circle" src="http://nicesnippets.com/demo/profile-1.jpg" alt="First slide">
+                      </div>
+                      <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Paul Mitchel</strong></h5>
+                      <h6 class="text-dark m-0">Web Developer</h6>
+                      <p class="m-0 pt-3 text-black">It has been a pleasure to be served by your team on our important day. We and our big family are truly satisfied with your service. You guys have been very professional in preparing our rundown plan, coordinating with our vendors, and more importantly taking care of us and our big family during the D-day in a very good way. Keep up the good work.
+                        God bless you all.
+                        </p>
+                  </div>
+                  <div class="carousel-item text-center">
+                      <div class="img-box p-1 border rounded-circle m-auto">
+                          <img class="d-block w-100 rounded-circle" src="http://nicesnippets.com/demo/profile-3.jpg" alt="First slide">
+                      </div>
+                      <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Steve Fonsi</strong></h5>
+                      <h6 class="text-dark m-0">Web Designer</h6>
+                      <p class="m-0 pt-3 text-black">We are very thankful that we choose Artea for our wedding organizer. The team work professionally and greatly assist us. Our wedding day runs smoothly and everything went well.
+                      Thank you so much WO Project :)</p>
+                  </div>
+                  <div class="carousel-item text-center">
+                      <div class="img-box p-1 border rounded-circle m-auto">
+                          <img class="d-block w-100 rounded-circle" src="http://nicesnippets.com/demo/profile-7.jpg" alt="First slide">
+                      </div>
+                      <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Daniel vebar</strong></h5>
+                      <h6 class="text-dark m-0">Seo Analyst</h6>
+                      <p class="m-0 pt-3 text-black">Planning a wedding is one of the important events in our life. Thank you WO Project teams for making everything just as fabuluos throughout the planning and on our wedding day. Grateful for all of the efforts by your great team.</p>
+                  </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img src="https://london.bridestory.com/images/c_fill,dpr_1.0,f_auto,fl_progressive,pg_1,q_80,w_680/v1/assets/img_20190701_185905_364-B1Q2UODer/point-one-wedding-organizer_testimoni-ajeng-tio_2.jpg
-                " class="rounded mx-auto d-block" style="width:358px ;height:358px ">
-                <div class="card body">
-                  <p class="card-text">
-                    Kepuasan pelanggan adalah tujuan utama bagi kami.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img src="https://london.bridestory.com/images/c_fill,dpr_1.0,f_auto,fl_progressive,pg_1,q_80,w_680/v1/assets/screenshot_2018-02-12-08-53-01-Bki6s_RUf/point-one-wedding-organizer_testimoni-wedding-acha-sari_1.png
-                " class="rounded mx-auto d-block" style="width:358px ;height:358px ">
-                <div class="card body">
-                  <p class="card-text">
-                    Karyawan kami pun sangat bisa di ajak kerja sama dengan pelanggan.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img src="https://london.bridestory.com/images/c_fill,dpr_1.0,f_auto,fl_progressive,pg_1,q_80,w_680/v1/assets/screenshot_20181112-082915-B1C8fuLaQ/point-one-wedding-organizer_testimoni-wedding-fendy-melisa_1.png
-        " class="rounded mx-auto d-block" style="width:358px ;height:358px ">
-                <div class="card body">
-                  <p class="card-text">
-                    Melisa fendy menggunakan jasa Full Dekorasi .
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img src="https://london.bridestory.com/images/c_fill,dpr_1.0,f_auto,fl_progressive,pg_1,q_80,w_680/v1/assets/img_20180917_103804_599-rkuCfs2dQ/point-one-wedding-organizer_testimoni-wedding-tamara-eki_1.jpg
-                " class="rounded mx-auto d-block" style="width:358px ;height:358px ">
-                <div class="card body">
-                  <p class="card-text">
-                    Acara berjalan dengan lancar pelanggan sangat puas dengan pelayanan kami.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img src="https://london.bridestory.com/images/c_fill,dpr_1.0,f_auto,fl_progressive,pg_1,q_80,w_680/v1/assets/img_20190701_185905_392-ryQ3U_vgH/point-one-wedding-organizer_testimoni-ajeng-tio_1.jpg
-        " class="rounded mx-auto d-block" style="width:358px ;height:358px ">
-                <div class="card body">
-                  <p class="card-text">
-                    Pelanggan sangat senang dengan kinerja kami dengan baik.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-  </main>
-
+          </div>            
+      </div>
+  </div>
+  <br></br> <br></br>
+</body>
   <footer class="text-muted" style="height: 125px">
     <div class="container">
       <p class="float-right"><a href="#">Back to top</a></p>
@@ -199,6 +184,9 @@
     crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="testi2.js"></script>
+  <script src="owl.carousel.js"></script>
 
 </body>
 

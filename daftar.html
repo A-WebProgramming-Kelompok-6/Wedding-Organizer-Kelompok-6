@@ -84,6 +84,12 @@
             </svg>
             wedding.organizer@zmail.com
           </a>
+          <a class="dropdown-item" href="contactus.html">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+              </svg>
+            <b>send us message here</b>
+          </a>
 
         </div>
       </li>
@@ -102,11 +108,11 @@
 </section>
 <div class="container">
   <div class="col row-cols-1 border rounded">
-    <form class="needs-validation" novalidate>
+    <form class="needs-validation" action="thankyou.html" novalidate> 
       <div class="col">
         <div class="form-group">
           <label for="Name1">Enter your name</label>
-          <input type="text" class="form-control" id="Nama1" aria-describedby="emailHelp" placeholder="Your Name">
+          <input type="text" class="form-control" id="Nama1" aria-describedby="emailHelp" placeholder="Your Name" required>
           <div class="valid-feedback">
           </div>
         </div>
@@ -123,7 +129,7 @@
       <div class="col">
         <div class="form-group">
             <label for="Name2">Enter your email</label>
-            <input type="text" class="form-control" id="Emailz" aria-describedby="emailHelp" type="email"
+            <input type="email" class="form-control" id="Emailz" aria-describedby="emailHelp" type="email"
               placeholder="Your Email" required>
             <div class="valid-feedback">
           </div>
@@ -139,7 +145,7 @@
         </div>
       </div>
 
-      <button type="submit" class="btn btn-success">Submit</button>
+      <button type="submit" class="btn btn-success" >Submit</button>
     </form>
   </div>
 </div>

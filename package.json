@@ -1,0 +1,27 @@
+{
+  "name": "wedding-organizer-kelompok-6",
+  "version": "1.0.0",
+  "description": "Tugas Web Programming Kelompok 6 Wedding Organizer <br></br>\r link untuk melihat website kami : https://projectwo.netlify.app <br></br>\r Tim Kami : <br></br>\r Albert || 535190035 <br></br>\r Dimyati Dhiauddin || 535190013 <br></br>\r Michael Nathan || 535190003 <br></br>\r Timothy Reynaldi || 535190008 <br></br>\r Willson Budianto || 535190023",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-WebProgramming-Kelompok-6/Wedding-Organizer-Kelompok-6.git"
+  },
+  "author": "Kelompok 6",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A-WebProgramming-Kelompok-6/Wedding-Organizer-Kelompok-6/issues"
+  },
+  "homepage": "https://github.com/A-WebProgramming-Kelompok-6/Wedding-Organizer-Kelompok-6#readme"
+}

@@ -135,11 +135,11 @@
 </section>
 <div class="container">
   <div class="col row-cols-1 border rounded">
-    <form class="needs-validation" action="thankyou" novalidate> 
+    <form class="needs-validation" action="/register" method="POST" novalidate > 
       <div class="col">
         <div class="form-group">
           <label for="Name1">Enter your name</label>
-          <input type="text" class="form-control" id="Nama1" aria-describedby="emailHelp" placeholder="Your Name" required>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Your Name" name="name" required>
           <div class="valid-feedback">
           </div>
         </div>
@@ -147,8 +147,8 @@
       <div class="col">
         <div class="form-group">
           <label for="Name2">Enter your couple's name</label>
-          <input type="text" class="form-control" id="Nama2" aria-describedby="emailHelp"
-            placeholder="Couple's Name" required>
+          <input type="text" class="form-control" id="coupleName" aria-describedby="emailHelp"
+            name="coupleName" placeholder="Couple's Name" required>
           <div class="valid-feedback">
           </div>
         </div>
@@ -156,8 +156,8 @@
       <div class="col">
         <div class="form-group">
             <label for="Name2">Enter your email</label>
-            <input type="email" class="form-control" id="Emailz" aria-describedby="emailHelp" type="email"
-              placeholder="Your Email" required>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" type="email"
+              name="email" placeholder="Your Email" required>
             <div class="valid-feedback">
           </div>
         </div>
@@ -165,14 +165,14 @@
       <div class="col">
         <div class="form-group">
           <label for="Tanggal">Choose your wedding date</label>
-          <input class="form-control" type="date" value="2020-12-12" id="example-date-input" required>
+          <input class="form-control" type="date" value="2020-12-12" id="date" name="date" required>
           <div class="invalid-feedback">
             Please enter a valid date.
           </div>
         </div>
       </div>
 
-      <button type="submit" class="btn btn-success" >Submit</button>
+      <button class="btn btn-success" >Submit</button>
     </form>
   </div>
 </div>

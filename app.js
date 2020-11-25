@@ -1,12 +1,53 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const app = express();
+const port = 3000;
+const mongoose = require('mongoose');
+const Web = require('./models/web');
+const bodyParser = require("body-parser");
 
-
-app.use(express.static('css'))
+const dbURI = 'mongodb://kelompok6:EgT71JLF9jKvM9CQ@cluster0-shard-00-00.hjz0a.mongodb.net:27017,cluster0-shard-00-01.hjz0a.mongodb.net:27017,cluster0-shard-00-02.hjz0a.mongodb.net:27017/data?ssl=true&replicaSet=atlas-6ttlwn-shard-0&authSource=admin&retryWrites=true&w=majority'
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+ .then((result) => console.log('connected to db'))
+ .catch((err) => console.log(err));
+app.use(express.static('css'));
+app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('views','./views')
 app.set('view engine', 'ejs')
+
+app.get('/add-test', (req, res) =>
+{
+    const web = new Web({
+        name: 'budi',
+        coupleName: 'ani',
+        email: 'michael.2001@gmail.com',
+        date: "2001-12-20",
+    })
+
+    web.save()  
+    .then((result) => {
+        res.send(result)
+    })
+    .catch(err => {
+        console.log(err);
+    });
+}
+)
+
+app.post('/register', (req, res)=> {
+    const web = new Web(req.body);
+    
+    web.save()
+        .then((result) => {
+            res.redirect('thankyou');
+        
+
+        })
+        .catch((err)=>{
+            console.log(err);
+        })
+    })
 
 app.get('', (req,res) => {
 res.render('home')
@@ -51,6 +92,7 @@ app.get('/testimoni', (req,res) => {
 app.get('/thankyou', (req,res) => {
     res.render('thankyou')
 })
+
 
 
 app.listen(port, () => console.info(`Listening on port ${port}`))

@@ -19,7 +19,7 @@ app.set('view engine', 'ejs')
 app.get('/add-test', (req, res) =>
 {
     const web = new Web({
-        name: 'budi',
+        name : 'budi',
         coupleName: 'ani',
         email: 'michael.2001@gmail.com',
         date: "2001-12-20",
@@ -99,6 +99,14 @@ app.get('/testimoni', (req,res) => {
 
 app.get('/thankyou', (req,res) => {
     res.render('thankyou')
+})
+
+app.get('/orders', async (req,res) => {
+ const data = await Web.find();
+  res.render("orders",{
+    data,
+  });
+
 })
 
 

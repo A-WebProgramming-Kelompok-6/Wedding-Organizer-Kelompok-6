@@ -35,7 +35,7 @@ app.get('/add-test', (req, res) =>
 }
 )
 
-app.post('/register', (req, res)=> {
+app.post('/daftar', (req, res)=> {
     const web = new Web(req.body);
     
     web.save()
@@ -61,8 +61,16 @@ app.get('/contactus', (req,res) => {
     res.render('contactus')
 })
 
-app.get('/daftar', (req,res) => {
+app.get('/daftar-awesome', (req,res) => {
     res.render('daftar')
+})
+
+app.get('/daftar-awesomeplus', (req,res) => {
+    res.render('daftarA')
+})
+
+app.get('/daftar-premium', (req,res) => {
+    res.render('daftarB')
 })
 
 app.get('/dekorasi', (req,res) => {

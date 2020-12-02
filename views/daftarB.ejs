@@ -25,8 +25,6 @@
   <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
   <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
 
-  <!-- Bootstrap core CSS -->
-  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     body {
@@ -39,11 +37,8 @@
       vertical-align: text-bottom;
     }
   </style>
-  <link href="../css/harga.css" rel="stylesheet">
-</head>
-<script src="https://kit.fontawesome.com/89e6e51c5d.js" crossorigin="anonymous"></script>
 
-</html>
+</head>
 
 <body>
   <!--Nav Bar-->
@@ -129,76 +124,95 @@
     <a class="btn btn-outline-light my-2 my-sm-0" type="submit" href="price">SIGN UP</a>
   </nav>
 
-<br> </br>
-<section class="pricing py-5">
+<br>  </br>
+<section class="jumbotron text-center">
   <div class="container">
-    <div class="row">
-      <!-- Free Tier -->
-      <div class="col-lg-4">
-        <div class="card mb-5 mb-lg-0">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">AWESOME</h5>
-            <h6 class="card-price text-center">Rp.200<span class="period">million</span></h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>200 pax</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Decoration</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Merchandise and Souvenir</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Band and Soundsystem</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Catering</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Reception's MC</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Photo and Video</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Bride and Groom's make up
-              </li>
-            </ul>
-            <a href="daftar-awesome" class="btn btn-block btn-primary text-uppercase">Choose</a>
-          </div>
-        </div>
-      </div>
-      <!-- Plus Tier -->
-      <div class="col-lg-4">
-        <div class="card mb-5 mb-lg-0">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">AWESOME+</h5>
-            <h6 class="card-price text-center">Rp.300<span class="period">million</span></h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>300 pax</strong></li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Decoration</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Merchandise and Souvenir</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Band and Soundsystem</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Catering</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Reception's MC</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Photo and Video </li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Bride and Groom's make up
-              </li>
-            </ul>
-            <a href="daftar-awesomeplus" class="btn btn-block btn-primary text-uppercase">Choose</a>
-          </div>
-        </div>
-      </div>
-      <!-- Pro Tier -->
-      <div class="col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Premium</h5>
-            <h6 class="card-price text-center">Rp.500<span class="period">million</span></h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>500 pax</strong></li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Decoration</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Merchandise and Souvenir</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Band and Soundsystem</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Catering</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Reception's MC</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>PRO</strong>Photo and Video</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Bride and Groom's make up</li>
-            </ul>
-            <a href="daftar-premium" class="btn btn-block btn-primary text-uppercase">Choose</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h1>SIGN UP</h1>
+    <p class="lead text-muted">
+      "Faith makes all things possible. Love makes all things easy.""
+    </p>
   </div>
 </section>
+<div class="container">
+  <div class="col row-cols-1 border rounded">
+    <form class="needs-validation" action="/daftar" method="POST" novalidate > 
+      <div class="col">
+        <div class="form-group">
+          <label for="Name1">Enter your name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Your Name" name="name" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="Name2">Enter your couple's name</label>
+          <input type="text" class="form-control" id="coupleName" aria-describedby="emailHelp"
+            name="coupleName" placeholder="Couple's Name" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+            <label for="Name2">Enter your email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" type="email"
+              name="email" placeholder="Your Email" required>
+            <div class="valid-feedback">
+          </div>
+        </div>
+      </div>
+      <div class="form-group col">
+        <label for="list">Select Package</label>
+        <select class="form-control" id="paket" name="paket">
+          <option disabled>Awesome</option>
+          <option disabled>Awesome+</option>
+          <option>Premium</option>
+        </select>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="Tanggal">Choose your wedding date</label>
+          <input class="form-control" type="date" value="2020-12-12" id="date" name="date" required>
+          <div class="invalid-feedback">
+            Please enter a valid date.
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-success" >Submit</button>
+    </form>
+  </div>
+</div>
+
+<br></br>
 </body>
+<footer class="text-muted" style="height: 125px">
+  <div class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2017-2020 Project WO, Inc. -  Universitas Tarumanagara</p>
+  </div>
+</footer>
+
+
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict';
+    window.addEventListener('load', function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>

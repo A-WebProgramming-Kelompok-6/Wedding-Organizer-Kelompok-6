@@ -15,6 +15,11 @@ const webSchema = new Schema({
         required : true
 
     },
+    paket: {
+        type : String,
+        enum: ['Awesome','Awesome+','Premium'],
+        required : true
+    },
     date: {
         type : Date,
         required : true

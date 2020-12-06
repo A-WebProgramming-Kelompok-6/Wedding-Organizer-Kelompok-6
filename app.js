@@ -4,6 +4,7 @@ let port = process.env.PORT || 3000;
 const mongoose = require("mongoose");
 const Web = require("./models/web");
 const bodyParser = require("body-parser");
+const Feedback = require("./models/feedback");
 
 const dbURI =
   "mongodb://kelompok6:EgT71JLF9jKvM9CQ@cluster0-shard-00-00.hjz0a.mongodb.net:27017,cluster0-shard-00-01.hjz0a.mongodb.net:27017,cluster0-shard-00-02.hjz0a.mongodb.net:27017/data?ssl=true&replicaSet=atlas-6ttlwn-shard-0&authSource=admin&retryWrites=true&w=majority";
@@ -44,6 +45,19 @@ app.post("/daftar", (req, res) => {
     .then((result) => {
       res.redirect("thankyou");
     })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+app.post("/contactus", (req, res) => {
+  const feedback = new Feedback(req.body);
+  feedback
+    .save()
+    .then((result) => {
+      res.redirect("home");
+    })
+
     .catch((err) => {
       console.log(err);
     });

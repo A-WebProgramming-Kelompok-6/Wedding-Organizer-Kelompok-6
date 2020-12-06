@@ -122,4 +122,11 @@ app.get("/orders", async (req, res) => {
   });
 });
 
+app.get("/feedback", async (req, res) => {
+  const feedbackData = await Feedback.find();
+  res.render("feedback", {
+    feedbackData,
+  });
+});
+
 app.listen(port, () => console.info(`Listening on port ${port}`));

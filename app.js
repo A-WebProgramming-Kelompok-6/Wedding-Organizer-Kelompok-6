@@ -15,6 +15,10 @@ mongoose
 app.use(express.static("css"));
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
+var fs = require("fs");
+var myCss = {
+  style: fs.readFileSync("css/contactus.css", "utf8"),
+};
 //
 app.set("views", "./views");
 app.set("view engine", "ejs");
@@ -72,7 +76,9 @@ app.get("/home", (req, res) => {
 });
 
 app.get("/contactus", (req, res) => {
-  res.render("contactus");
+  res.render("contactus", {
+    myCss: myCss,
+  });
 });
 
 app.get("/daftar-awesome", (req, res) => {
